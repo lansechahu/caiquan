@@ -1,0 +1,78 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0; }
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  background: #000000; }
+
+table,
+td,
+tr,
+th {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+/*========================================== pixi部分 =====================*/
+#pixiStage {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+  #pixiStage #pixiCanvas {
+    position: absolute;
+    width: 100%;
+    height: auto; }
+
+/*====================================视频部分==================================*/
+.videoBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none; }
+
+#video {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /*display: none;*/ }
+
+/*=========================================横屏提示=======================================*/
+@media all and (orientation: landscape) {
+  #Rotation {
+    display: block; } }
+@media all and (orientation: portrait) {
+  #Rotation {
+    display: none; } }
+#Rotation {
+  width: 100%;
+  height: 100%;
+  background: url("../images/horizontal.jpg") no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  z-index: 9999999; }
+
+#qrcodeBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none; }
+  #qrcodeBox #qrcode {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+/*# sourceMappingURL=index.css.map */

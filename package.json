@@ -1,0 +1,46 @@
+{
+  "name": "h5_pixi_build",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open --config webpack.config.dev.js",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production --config webpack.config.build.js",
+    "server": "node server/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "chc-pixi-utils": "^1.0.2",
+    "chcutils": "^1.0.3",
+    "clean-webpack-plugin": "^1.0.0",
+    "eventemitter3": "^3.1.0",
+    "file-loader": "^3.0.1",
+    "gsap": "^2.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.3.1",
+    "pixi.js": "^4.8.4",
+    "qrcode": "^1.3.2",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "url-loader": "^1.1.2",
+    "vconsole": "^3.2.0",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.13",
+    "weixin-js-sdk": "^1.4.0-test"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}

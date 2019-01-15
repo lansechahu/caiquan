@@ -31,12 +31,13 @@ export default class Scene extends PIXI.Sprite {
         });
 
         //背面
-        this.back = PixiUtils.CdrawRect(this.wid, this.hei, {
+        /*this.back = PixiUtils.CdrawRect(this.wid, this.hei, {
             lineWeight: 2,
             lineColor: '0xfff000',
             lineAlpha: 1,
             fillColor: '0xfe3242'
-        });
+        });*/
+        this.back = PixiUtils.CSprite('card_bg', 'fromFrame');
         this.back.alpha = 0;
 
         const fontStyle = new PIXI.TextStyle({

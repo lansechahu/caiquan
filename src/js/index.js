@@ -130,7 +130,8 @@ let loadingMc;
 function loading() {
     //先加载加载界面
     let loading_asset = [
-        {name: 'myIcon', url: './images/myIcon.jpg'}
+        {name: 'myIcon', url: './images/myIcon.jpg'},
+        {name: 'card_bg', url: './images/card_bg.jpg'}
     ];
     const loader = new Loader({manifest: loading_asset});
     loader.start();

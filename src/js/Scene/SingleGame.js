@@ -13,7 +13,7 @@ export default class SingleGame extends Scene {
     init(__arr) {
         this.GAME_OVER = 'game_over'; //游戏结束事件
 
-        this.bg = PixiUtils.CdrawRect(this.wid, this.hei, {fillColor: 0xc5dfff});
+        this.bg = PixiUtils.CdrawRect(this.wid, this.hei, {fillColor: 0x293c55});
 
         this.isClick = true;
         this.round = 5; //回合数
@@ -32,7 +32,7 @@ export default class SingleGame extends Scene {
         let style = new PIXI.TextStyle({
             fontSize: 36,
             fontWeight: 'bold',
-            fill: '#000000'
+            fill: '#ffffff'
         });
 
         //中间线
@@ -43,7 +43,7 @@ export default class SingleGame extends Scene {
 
         //电脑UI
         this.com_ok = false; //电脑已准备好
-        this.com_name = new PIXI.Text('电脑：', style);
+        this.com_name = new PIXI.Text('敌人：', style);
         this.com_blood = new Blood();
         this.com_blood.init();
         //电脑卡牌组
@@ -76,10 +76,12 @@ export default class SingleGame extends Scene {
 
         //选定按钮
         this.btn = PixiUtils.CBtnText('选 定', 120, 60, {
-            lineWeight: 2,
-            lineColor: '0x000000',
+            lineWeight: 5,
+            lineColor: '0xa9334c',
             lineAlpha: 1,
-            fillAlpha: 0,
+            fillAlpha: 1,
+            fillColor:'0x0e151f',
+            fontColor:'0xffffff',
             fontSize: 24,
             align: 'center'
         });

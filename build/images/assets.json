@@ -1,0 +1,44 @@
+{"frames": {
+
+"bu.jpg":
+{
+	"frame": {"x":211,"y":136,"w":132,"h":207},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":132,"h":207},
+	"sourceSize": {"w":132,"h":207}
+},
+"card_bg.jpg":
+{
+	"frame": {"x":136,"y":2,"w":132,"h":207},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":132,"h":207},
+	"sourceSize": {"w":132,"h":207}
+},
+"jian.jpg":
+{
+	"frame": {"x":2,"y":211,"w":132,"h":207},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":132,"h":207},
+	"sourceSize": {"w":132,"h":207}
+},
+"shi.jpg":
+{
+	"frame": {"x":2,"y":2,"w":132,"h":207},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":132,"h":207},
+	"sourceSize": {"w":132,"h":207}
+}},
+"meta": {
+	"app": "http://www.texturepacker.com",
+	"version": "1.0",
+	"image": "assets.png",
+	"format": "RGBA8888",
+	"size": {"w":345,"h":345},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:9bf5f475dcc2afb71fa6688004ab328e$"
+}
+}

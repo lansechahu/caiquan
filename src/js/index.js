@@ -110,7 +110,7 @@ function initPixi() {
     const hei = window.innerHeight;
 
     app = new PIXI.Application(640, 640 / (wid / hei), {
-        backgroundColor: 0x1099bb,
+        backgroundColor: 0x293c55,
         preserveDrawingBuffer: true,
         antialias: true,
     });
@@ -131,7 +131,7 @@ function loading() {
     //先加载加载界面
     let loading_asset = [
         {name: 'myIcon', url: './images/myIcon.jpg'},
-        {name: 'card_bg', url: './images/card_bg.jpg'}
+        {name: 'assets', url: './images/assets.json'}
     ];
     const loader = new Loader({manifest: loading_asset});
     loader.start();

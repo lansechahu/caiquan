@@ -7,15 +7,17 @@ export default class Scene1 extends Scene {
         this.SINGLE = 'single';
         this.DOUBLE = 'double';
 
-        this.bg = PixiUtils.CdrawRect(this.wid, this.hei, {fillColor: 0xc5dfff});
+        this.bg = PixiUtils.CdrawRect(this.wid, this.hei, {fillColor: 0x293c55});
 
         this.box = new PIXI.Container();
 
         this.singleBtn = PixiUtils.CBtnText('单人游戏', 200, 80, {
-            lineWeight: 2,
-            lineColor: '0x000000',
+            lineWeight: 5,
+            lineColor: '0xa9334c',
             lineAlpha: 1,
-            fillAlpha: 0,
+            fillAlpha: 1,
+            fillColor:'0x0e151f',
+            fontColor:'0xffffff',
             fontSize: 24,
             align: 'center'
         });
@@ -25,10 +27,12 @@ export default class Scene1 extends Scene {
         this.singleBtn.alpha = 0;
 
         this.doubleBtn = PixiUtils.CBtnText('双人游戏', 200, 80, {
-            lineWeight: 2,
-            lineColor: '0x000000',
+            lineWeight: 5,
+            lineColor: '0xa9334c',
             lineAlpha: 1,
-            fillAlpha: 0,
+            fillAlpha: 1,
+            fillColor:'0x0e151f',
+            fontColor:'0xffffff',
             fontSize: 24,
             align: 'center'
         });

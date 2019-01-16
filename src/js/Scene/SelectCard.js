@@ -8,12 +8,19 @@ export default class SelectCard extends Scene {
     init() {
         this.BEGIN_GAME = 'begin_game';
 
-        this.bg = PixiUtils.CdrawRect(this.wid, this.hei, {fillColor: 0xc5dfff});
+        this.bg = PixiUtils.CdrawRect(this.wid, this.hei, {fillColor: 0x293c55});
         this.waitBg = PixiUtils.CdrawRect(this.wid, this.hei, {fillColor: '0x000000', fillAlpha: 0.6});
 
         this.content = new PIXI.Container();
 
         let cardPositionArr = [115, 320, 526]; //待选择的三种卡牌的x轴位置
+
+        const fontStyle = new PIXI.TextStyle({
+            fontSize: 36,
+            fill: '0xffffff'
+        });
+
+        this.txt = new PIXI.Text('选择五张牌出战', fontStyle);
 
         //虚线框的位置数组，x轴位置和距待选卡牌的y轴位置
         let dashLinePositionArr = [
@@ -45,20 +52,24 @@ export default class SelectCard extends Scene {
 
         //开始游戏按钮
         this.btn = PixiUtils.CBtnText('开始游戏', 200, 80, {
-            lineWeight: 2,
-            lineColor: '0x000000',
+            lineWeight: 5,
+            lineColor: '0xa9334c',
             lineAlpha: 1,
-            fillAlpha: 0,
+            fillAlpha: 1,
+            fillColor:'0x0e151f',
+            fontColor:'0xffffff',
             fontSize: 24,
             align: 'center'
         });
 
         //等待提示
         this.waitTip = PixiUtils.CBtnText('等待其他玩家开始', 300, 100, {
-            lineWeight: 2,
-            lineColor: '0x000000',
+            lineWeight: 5,
+            lineColor: '0xa9334c',
             lineAlpha: 1,
-            fillAlpha: 0,
+            fillAlpha: 1,
+            fillColor:'0x0e151f',
+            fontColor:'0xffffff',
             fontSize: 24,
             align: 'center'
         });
@@ -78,11 +89,14 @@ export default class SelectCard extends Scene {
         this.addChild(this.bg);
         this.addChild(this.content);
 
+        this.content.addChild(this.txt);
+        this.txt.x = this.wid / 2 - this.txt.width / 2;
+
         for (let i = 0; i < this.scardArr.length; i++) {
             let temp = this.scardArr[i];
             this.content.addChild(temp);
             temp.begin();
-            temp.y = temp.hei / 2;
+            temp.y = temp.hei / 2 + this.txt.y + this.txt.height + 30;
             temp.interactive = true;
             temp.on('pointerdown', () => {
                 console.log(temp.value);

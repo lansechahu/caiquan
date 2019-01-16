@@ -146,10 +146,10 @@
         </struct>
         <key>fileList</key>
         <array>
-            <filename>man.png</filename>
-            <filename>btn_back.png</filename>
-            <filename>music_1.png</filename>
-            <filename>music_0.png</filename>
+            <filename>shi.jpg</filename>
+            <filename>bu.jpg</filename>
+            <filename>card_bg.jpg</filename>
+            <filename>jian.jpg</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

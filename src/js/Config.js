@@ -4,16 +4,19 @@
 
 let stone = {
     name: '石',
+    src: 'shi.jpg',
     value: 2
 };
 
 let clipper = {
     name: '剪',
+    src: 'jian.jpg',
     value: 1
 };
 
 let encase = {
     name: '布',
+    src: 'bu.jpg',
     value: 0
 };
 

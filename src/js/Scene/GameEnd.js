@@ -10,7 +10,7 @@ export default class Scene1 extends Scene {
         let str = '';
         switch (__type) {
             case 0:
-                str = '电 脑 获 胜';
+                str = '敌 人 获 胜';
                 break;
             case 1:
                 str = '玩 家 获 胜';
@@ -25,16 +25,18 @@ export default class Scene1 extends Scene {
         let style = new PIXI.TextStyle({
             fontSize: 48,
             fontWeight: 'bold',
-            fill: '#ffffff'
+            fill: '#a9334c'
         });
 
         this.txt = new PIXI.Text(str, style);
 
         this.replayBtn = PixiUtils.CBtnText('再玩一次', 150, 60, {
-            lineWeight: 2,
-            lineColor: '0x000000',
+            lineWeight: 5,
+            lineColor: '0xa9334c',
             lineAlpha: 1,
-            fillAlpha: 0,
+            fillAlpha: 1,
+            fillColor:'0x0e151f',
+            fontColor:'0xffffff',
             fontSize: 24,
             align: 'center'
         });

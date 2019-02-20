@@ -6,7 +6,7 @@ import * as PIXI from 'pixi.js';
 import * as PixiUtils from 'chc-pixi-utils';
 import EventEmitter from 'eventemitter3';
 
-export default class Scene extends PIXI.Sprite {
+export default class Blood extends PIXI.Sprite {
     constructor() {
         super();
         EventEmitter.call(this);
